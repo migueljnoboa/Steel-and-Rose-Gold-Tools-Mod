@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:flint",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone",
+    "minecraft:stick"
+  ],
+  "result": {
+    "id": "minecraft:stone_sword",
+    "count": 1
+  }
+}

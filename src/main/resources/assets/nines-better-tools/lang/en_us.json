@@ -1,0 +1,18 @@
+{
+  "item.nines-better-tools.rose_gold_ingot" : "Rose Gold Ingot",
+  "item.nines-better-tools.steel_ingot" : "Steel Ingot",
+
+  "item.nines-better-tools.rose_gold_sword" : "Rose Gold Sword",
+  "item.nines-better-tools.rose_gold_pickaxe" : "Rose Gold Pickaxe",
+  "item.nines-better-tools.rose_gold_axe" : "Rose Gold Axe",
+  "item.nines-better-tools.rose_gold_shovel" : "Rose Gold Shovel",
+  "item.nines-better-tools.rose_gold_hoe" : "Rose Gold Hoe",
+
+  "item.nines-better-tools.steel_sword" : "Steel Sword",
+  "item.nines-better-tools.steel_pickaxe" : "Steel Pickaxe",
+  "item.nines-better-tools.steel_axe" : "Steel Axe",
+  "item.nines-better-tools.steel_shovel" : "Steel Shovel",
+  "item.nines-better-tools.steel_hoe" : "Steel Hoe",
+
+  "block.nines-better-tools.rose_gold_block" : "Rose Gold Block"
+}
