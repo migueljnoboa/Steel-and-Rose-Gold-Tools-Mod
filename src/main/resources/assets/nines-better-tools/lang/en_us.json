@@ -14,5 +14,11 @@
   "item.nines-better-tools.steel_shovel" : "Steel Shovel",
   "item.nines-better-tools.steel_hoe" : "Steel Hoe",
 
-  "block.nines-better-tools.rose_gold_block" : "Rose Gold Block"
+  "item.nines-better-tools.rose_gold_block" : "Rose Gold Block",
+  "item.nines-better-tools.steel_block" : "Steel Block",
+
+  "item.nines-better-tools.rose_gold_nugget" : "Rose Gold Nugget",
+  "item.nines-better-tools.steel_nugget" : "Steel Nugget",
+
+  "itemGroup.nines_better_tools_reference" : "Nine's Better Tools"
 }

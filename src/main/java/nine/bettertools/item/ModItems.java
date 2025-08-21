@@ -17,6 +17,9 @@ public class ModItems {
     public static final Item ROSE_GOLD_INGOT = register("rose_gold_ingot", Item::new, new Item.Settings());
     public static final Item STEEL_INGOT = register("steel_ingot", Item::new, new Item.Settings());
 
+    public static final Item ROSE_GOLD_NUGGET = register("rose_gold_nugget", Item::new, new Item.Settings());
+    public static final Item STEEL_NUGGET = register("steel_nugget", Item::new, new Item.Settings());
+
     public static final Item ROSE_GOLD_SWORD = register("rose_gold_sword", Item::new, new Item.Settings());
     public static final Item ROSE_GOLD_PICKAXE = register("rose_gold_pickaxe", Item::new, new Item.Settings());
     public static final Item ROSE_GOLD_AXE = register("rose_gold_axe", Item::new, new Item.Settings());
@@ -42,9 +45,31 @@ public class ModItems {
     public static void initialize() {
         NinesBetterTools.LOGGER.info("Registering Mod Items for " + NinesBetterTools.MOD_ID);
 
+        // Custom Item Group (add all items)
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.NINES_BETTER_TOOLS_ITEM_GROUP_KEY).register((itemGroup) -> {
+            itemGroup.add(ModItems.ROSE_GOLD_INGOT);
+            itemGroup.add(ModItems.ROSE_GOLD_NUGGET);
+
+            itemGroup.add(ModItems.STEEL_INGOT);
+            itemGroup.add(ModItems.STEEL_NUGGET);
+
+            itemGroup.add(ModItems.ROSE_GOLD_PICKAXE);
+            itemGroup.add(ModItems.ROSE_GOLD_AXE);
+            itemGroup.add(ModItems.ROSE_GOLD_SHOVEL);
+            itemGroup.add(ModItems.ROSE_GOLD_HOE);
+
+            itemGroup.add(ModItems.STEEL_PICKAXE);
+            itemGroup.add(ModItems.STEEL_AXE);
+            itemGroup.add(ModItems.STEEL_SHOVEL);
+            itemGroup.add(ModItems.STEEL_HOE);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> {
             itemGroup.add(ModItems.ROSE_GOLD_INGOT);
             itemGroup.add(ModItems.STEEL_INGOT);
+
+            itemGroup.add(ModItems.ROSE_GOLD_NUGGET);
+            itemGroup.add(ModItems.STEEL_NUGGET);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> {

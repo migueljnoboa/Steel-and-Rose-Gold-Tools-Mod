@@ -1,13 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    "minecraft:cobblestone",
-    "minecraft:cobblestone",
-    "minecraft:flint",
-    "minecraft:cobblestone",
-    "minecraft:stick",
-    "minecraft:stick"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#/",
+    "F/"
   ],
+  "key": {
+    "#": "#minecraft:stone_tool_materials",
+    "/": "minecraft:stick",
+    "F": "minecraft:flint"
+  },
   "result": {
     "id": "minecraft:stone_axe",
     "count": 1

@@ -3,6 +3,7 @@ package nine.bettertools;
 import net.fabricmc.api.ModInitializer;
 
 import nine.bettertools.block.ModBlocks;
+import nine.bettertools.item.ModItemGroups;
 import nine.bettertools.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ public class NinesBetterTools implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.initialize();
 		ModItems.initialize();
 		ModBlocks.initialize();
 	}

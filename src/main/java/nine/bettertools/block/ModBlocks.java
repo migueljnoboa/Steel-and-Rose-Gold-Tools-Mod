@@ -22,7 +22,14 @@ public class ModBlocks {
     public static final Block ROSE_GOLD_BLOCK = register(
             "rose_gold_block",
             Block::new,
-            AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK),
+            AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK),
+            true
+    );
+
+    public static final Block STEEL_BLOCK = register(
+            "steel_block",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK),
             true
     );
 
@@ -59,7 +66,8 @@ public class ModBlocks {
         NinesBetterTools.LOGGER.info("Registering Mod Blocks for " + NinesBetterTools.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
-            itemGroup.add(ModBlocks.ROSE_GOLD_BLOCK.asItem());
+            itemGroup.add(ModBlocks.ROSE_GOLD_BLOCK);
+            itemGroup.add(ModBlocks.STEEL_BLOCK);
         });
 
     }
