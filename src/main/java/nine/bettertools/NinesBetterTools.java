@@ -19,7 +19,7 @@ public class NinesBetterTools implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.initialize();
-		ModItems.initialize();
 		ModBlocks.initialize();
+		ModItems.initialize();
 	}
 }

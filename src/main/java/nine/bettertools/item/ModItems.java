@@ -32,6 +32,12 @@ public class ModItems {
     public static final Item STEEL_SHOVEL = register("steel_shovel", Item::new, new Item.Settings());
     public static final Item STEEL_HOE = register("steel_hoe", Item::new, new Item.Settings());
 
+    public static final Item ROSE_GOLD_COOKIE = register(
+            "rose_gold_cookie",
+            Item::new,
+            new Item.Settings().food(ModFoodComponents.ROSE_GOLD_COOKIE_COMPONENT, ModFoodComponents.ROSE_GOLD_COOKIE_CONSUMABLE_COMPONENT)
+    );
+
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NinesBetterTools.MOD_ID, name));
@@ -47,6 +53,7 @@ public class ModItems {
 
         // Custom Item Group (add all items)
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.NINES_BETTER_TOOLS_ITEM_GROUP_KEY).register((itemGroup) -> {
+
             itemGroup.add(ModItems.ROSE_GOLD_INGOT);
             itemGroup.add(ModItems.ROSE_GOLD_NUGGET);
 
@@ -62,6 +69,12 @@ public class ModItems {
             itemGroup.add(ModItems.STEEL_AXE);
             itemGroup.add(ModItems.STEEL_SHOVEL);
             itemGroup.add(ModItems.STEEL_HOE);
+
+            itemGroup.add(ModItems.ROSE_GOLD_COOKIE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register((itemGroup) -> {
+            itemGroup.add(ModItems.ROSE_GOLD_COOKIE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> {

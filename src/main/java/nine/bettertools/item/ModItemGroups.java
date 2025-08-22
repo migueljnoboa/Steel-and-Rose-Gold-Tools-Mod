@@ -22,6 +22,7 @@ public class ModItemGroups {
     public static void initialize() {
 
         NinesBetterTools.LOGGER.info("Registering Mod Item Groups for " + NinesBetterTools.MOD_ID);
+
         Registry.register(Registries.ITEM_GROUP, NINES_BETTER_TOOLS_ITEM_GROUP_KEY, NINES_BETTER_TOOLS_ITEM_GROUP);
     }
 

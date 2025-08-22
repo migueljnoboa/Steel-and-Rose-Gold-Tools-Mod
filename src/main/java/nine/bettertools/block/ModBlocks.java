@@ -14,6 +14,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import nine.bettertools.NinesBetterTools;
+import nine.bettertools.item.ModItemGroups;
+import nine.bettertools.item.ModItems;
 
 import java.util.function.Function;
 
@@ -64,6 +66,11 @@ public class ModBlocks {
 
     public static void initialize() {
         NinesBetterTools.LOGGER.info("Registering Mod Blocks for " + NinesBetterTools.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.NINES_BETTER_TOOLS_ITEM_GROUP_KEY).register((itemGroup) -> {
+            itemGroup.add(ModBlocks.ROSE_GOLD_BLOCK);
+            itemGroup.add(ModBlocks.STEEL_BLOCK);
+        });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.add(ModBlocks.ROSE_GOLD_BLOCK);

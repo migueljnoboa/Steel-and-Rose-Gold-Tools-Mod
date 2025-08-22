@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nines-better-tools:rose_gold_nugget",
+    "nines-better-tools:rose_gold_nugget",
+    "minecraft:cookie",
+    "nines-better-tools:rose_gold_nugget",
+    "nines-better-tools:rose_gold_nugget"
+  ],
+  "result": {
+    "id": "nines-better-tools:rose_gold_cookie",
+    "count": 1
+  }
+}
