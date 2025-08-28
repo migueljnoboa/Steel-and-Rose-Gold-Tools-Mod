@@ -64,11 +64,13 @@ public class ModItems {
             itemGroup.add(ModItems.ROSE_GOLD_AXE);
             itemGroup.add(ModItems.ROSE_GOLD_SHOVEL);
             itemGroup.add(ModItems.ROSE_GOLD_HOE);
+            itemGroup.add(ModItems.ROSE_GOLD_SWORD);
 
             itemGroup.add(ModItems.STEEL_PICKAXE);
             itemGroup.add(ModItems.STEEL_AXE);
             itemGroup.add(ModItems.STEEL_SHOVEL);
             itemGroup.add(ModItems.STEEL_HOE);
+            itemGroup.add(ModItems.STEEL_SWORD);
 
             itemGroup.add(ModItems.ROSE_GOLD_COOKIE);
         });
