@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "##",
-    "#/",
-    "F/"
-  ],
+  "category": "equipment",
   "key": {
     "#": "#minecraft:stone_tool_materials",
     "/": "minecraft:stick",
     "F": "minecraft:flint"
   },
+  "pattern": [
+    "##",
+    "#/",
+    "F/"
+  ],
   "result": {
-    "id": "minecraft:stone_axe",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:stone_axe"
   }
 }
