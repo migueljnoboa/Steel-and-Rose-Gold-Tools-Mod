@@ -16,7 +16,7 @@ public class ModToolMaterials {
     public static final ToolMaterial ROSE_GOLD_TOOL_MATERIAL = new ToolMaterial(
             ModTags.Blocks.INCORRECT_FOR_ROSE_GOLD_TOOL,
             225,
-            13.0F,
+            14.0F,
             2.0F,
             22,
             ModTags.Items.ROSE_GOLD_MATERIAL
